@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultiv8 Solutions — Smarter, Healthier Plant Growth</title>
+<meta name="description" content="Cultiv8 Solutions builds AI-powered plant monitoring that helps farmers grow healthier crops with real-time insights and proactive care.">
+<meta property="og:title" content="Cultiv8 Solutions — Smarter, Healthier Plant Growth">
+<meta property="og:image" content="assets/social-banner.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom animated cursor -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo.png" alt="Cultiv8 Solutions logo" class="brand-logo">
+        <span class="brand-name">Cultiv<span class="brand-accent">8</span> Solutions</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#dashboard">Live dashboard</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Demo</a>
+        <a href="#contact" class="nav-cta">Get started</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/dashboard-graphic.jpg">
+      <source src="https://assets.mixkit.co/videos/9762/9762-360.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-leaves" aria-hidden="true">
+      <span>🌿</span><span>🌱</span><span>🍃</span><span>🌿</span><span>🌱</span>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">AI-powered plant care</p>
+      <h1 class="reveal">Grow smarter.<br>Grow <em>healthier</em>.</h1>
+      <p class="hero-sub reveal">Cultiv8 Solutions pairs live sensors with AI insight so every plant — from a single greenhouse to an entire field — gets exactly the care it needs, the moment it needs it.</p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary">Get started</a>
+        <a href="#video" class="btn btn-ghost">▶ Watch demo</a>
+      </div>
+    </div>
+    <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats" id="stats">
+    <div class="container stats-grid">
+      <div class="stat reveal">
+        <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+        <p>Healthier growth reported by early users</p>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+        <p>Continuous monitoring, day and night</p>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number" data-target="3">0</span><span class="stat-suffix">min</span>
+        <p>Average time to spot a stressed plant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <p class="eyebrow reveal">How Cultiv8 works</p>
+      <h2 class="reveal">One root system, three jobs</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-icon">🧠</div>
+          <h3>AI insights</h3>
+          <p>Our model learns each plant's normal rhythm, so it can tell the difference between a dry afternoon and real distress.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-icon">📡</div>
+          <h3>Real-time monitoring</h3>
+          <p>Soil moisture, temperature, and light are read continuously from low-power sensors in the field or greenhouse.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-icon">🔔</div>
+          <h3>Proactive alerts</h3>
+          <p>Get a message before a problem shows on the leaves — not after — so you can act while it's still a small fix.</p>
+        </div>
+      </div>
+
+      <div class="showcase reveal">
+        <img src="assets/dashboard-graphic.jpg" alt="Cultiv8 dashboard showing plant health, moisture, temperature and light readings" loading="lazy">
+        <div class="showcase-text">
+          <h3>Built around one screen you'll actually check</h3>
+          <p>No buried menus or exports. Cultiv8's dashboard gives you one honest number — plant health — backed by the readings behind it, updated live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE DASHBOARD DEMO ===== -->
+  <section class="dashboard" id="dashboard">
+    <div class="container">
+      <p class="eyebrow reveal">See it live</p>
+      <h2 class="reveal">A sample reading, right now</h2>
+      <p class="section-sub reveal">This is a live-style demo feed — plug in real sensors and these numbers become your field.</p>
+
+      <div class="dash-card reveal">
+        <div class="gauge-wrap">
+          <svg class="gauge" viewBox="0 0 200 200">
+            <circle class="gauge-track" cx="100" cy="100" r="86"></circle>
+            <circle class="gauge-fill" id="gaugeFill" cx="100" cy="100" r="86"></circle>
+          </svg>
+          <div class="gauge-label">
+            <span class="gauge-number" id="healthNumber">85</span><span class="gauge-percent">%</span>
+            <span class="gauge-caption">Plant health</span>
+          </div>
+        </div>
+        <div class="dash-readings">
+          <div class="reading">
+            <span class="reading-icon">💧</span>
+            <div>
+              <p class="reading-label">Moisture</p>
+              <p class="reading-value" id="moistureVal">42%</p>
+            </div>
+          </div>
+          <div class="reading">
+            <span class="reading-icon">🌡️</span>
+            <div>
+              <p class="reading-label">Temperature</p>
+              <p class="reading-value" id="tempVal">24°C</p>
+            </div>
+          </div>
+          <div class="reading">
+            <span class="reading-icon">☀️</span>
+            <div>
+              <p class="reading-label">Light</p>
+              <p class="reading-value" id="lightVal">Optimal</p>
+            </div>
+          </div>
+          <div class="reading">
+            <span class="reading-icon">📶</span>
+            <div>
+              <p class="reading-label">Sensor status</p>
+              <p class="reading-value reading-live"><span class="live-dot"></span> Live</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <p class="eyebrow reveal">From the field</p>
+      <h2 class="reveal">The people and plants behind the data</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item tall reveal">
+          <img src="https://images.unsplash.com/photo-1602867741746-6df80f40b3f6?auto=format&fit=crop&w=900&q=80" alt="Farmer standing in a corn field checking her crop" loading="lazy">
+          <figcaption>Checking in on the season</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1522120679444-b967faef8c38?auto=format&fit=crop&w=900&q=80" alt="Close-up of healthy green plant leaves in a field" loading="lazy">
+          <figcaption>Healthy leaves, healthy data</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&w=900&q=80" alt="Hand holding a small green seedling" loading="lazy">
+          <figcaption>Every plant starts small</figcaption>
+        </figure>
+        <figure class="gallery-item wide reveal">
+          <img src="https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?auto=format&fit=crop&w=1200&q=80" alt="Farmer planting seedlings in soil during daytime" loading="lazy">
+          <figcaption>Planting the next harvest</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO ===== -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <p class="eyebrow reveal">Watch</p>
+      <h2 class="reveal">From seed to smart harvest</h2>
+      <div class="video-frame reveal">
+        <video controls playsinline poster="https://images.unsplash.com/photo-1522120679444-b967faef8c38?auto=format&fit=crop&w=1200&q=80">
+          <source src="https://assets.mixkit.co/videos/46092/46092-360.mp4" type="video/mp4">
+          Your browser doesn't support embedded video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section class="testimonial">
+    <div class="container testimonial-inner reveal">
+      <p class="quote">"I used to walk the whole field every morning just to guess what needed water. Now I check one number before I even leave the house."</p>
+      <p class="quote-author">— Ahmad, wheat farmer, Punjab (early pilot user)</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's grow something together</h2>
+        <p>Questions, pilot requests, or partnership ideas — send us a message and we'll reply from a real inbox, not a bot.</p>
+        <a class="contact-email" href="mailto:info.aquaguard.pk@gmail.com">info.aquaguard.pk@gmail.com</a>
+
+        <div class="social-row">
+          <a href="https://www.linkedin.com/company/cultiv8-solutions/" target="_blank" rel="noopener" aria-label="Cultiv8 Solutions on LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cultiv8.solutions" target="_blank" rel="noopener" aria-label="Cultiv8 Solutions on Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.85 3.9 2.31 7.15 2.16 8.42 2.1 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 1 0 0 8.98 4.49 4.49 0 0 0 0-8.98zm0 7.4a2.92 2.92 0 1 1 0-5.83 2.92 2.92 0 0 1 0 5.83zm5.71-7.58a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/1EdKd6DAYe/" target="_blank" rel="noopener" aria-label="Cultiv8 Solutions on Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M13.5 21v-8.14h2.73l.41-3.17h-3.14V7.71c0-.92.25-1.54 1.57-1.54h1.67V3.34C15.9 3.24 15 3.16 13.94 3.16c-2.5 0-4.21 1.53-4.21 4.34v2.19H6.99v3.17h2.74V21h3.77z"/></svg>
+          </a>
+          <a href="https://x.com/cultiv8solution" target="_blank" rel="noopener" aria-label="Cultiv8 Solutions on X" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M18.9 3H21l-6.4 7.3L22.1 21h-6.2l-4.9-6.4L5.4 21H3.3l6.9-7.9L2.9 3h6.3l4.4 5.9L18.9 3zm-1.1 16.2h1.7L7.3 4.7H5.5l12.3 14.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Tell us about your field, farm, or greenhouse..."></textarea>
+
+        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Cultiv8 Solutions logo" class="brand-logo">
+        <span>Cultiv8 Solutions</span>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Cultiv8 Solutions. Empowering smarter, healthier plant growth.</p>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/company/cultiv8-solutions/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon small">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/cultiv8.solutions" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon small">
+          <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.85 3.9 2.31 7.15 2.16 8.42 2.1 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 1 0 0 8.98 4.49 4.49 0 0 0 0-8.98zm0 7.4a2.92 2.92 0 1 1 0-5.83 2.92 2.92 0 0 1 0 5.83zm5.71-7.58a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1EdKd6DAYe/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon small">
+          <svg viewBox="0 0 24 24"><path d="M13.5 21v-8.14h2.73l.41-3.17h-3.14V7.71c0-.92.25-1.54 1.57-1.54h1.67V3.34C15.9 3.24 15 3.16 13.94 3.16c-2.5 0-4.21 1.53-4.21 4.34v2.19H6.99v3.17h2.74V21h3.77z"/></svg>
+        </a>
+        <a href="https://x.com/cultiv8solution" target="_blank" rel="noopener" aria-label="X" class="social-icon small">
+          <svg viewBox="0 0 24 24"><path d="M18.9 3H21l-6.4 7.3L22.1 21h-6.2l-4.9-6.4L5.4 21H3.3l6.9-7.9L2.9 3h6.3l4.4 5.9L18.9 3zm-1.1 16.2h1.7L7.3 4.7H5.5l12.3 14.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
